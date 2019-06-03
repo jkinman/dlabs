@@ -16,8 +16,8 @@ a{
 }
 
 p{
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 400;
     padding-top:1rem;
     padding-bottom:1rem;
 }
@@ -120,6 +120,10 @@ button{
     max-width: 600px;
     width: 75vw;
 }
+
+.mjchews{
+    width: 100%;
+}
 .section {
     padding:2rem;
     @media only screen 
@@ -141,7 +145,7 @@ button{
     and (min-device-width : 375px) 
     and (max-device-height : 896px) {
         background-attachment: scroll;
-        height: 420px;
+        min-height: 420px;
     }
 
     img {
@@ -193,13 +197,13 @@ button{
         }
         }
     h2 {
-        font-weight: 300;
-        font-size: 30px;
+        font-weight: 400;
+        font-size: 40px;
         letter-spacing: 0px;
     }
     p {
         font-weight: 300;
-        font-size: 14px;
+        font-size: 20px;
         letter-spacing: 0;
     }
 }
