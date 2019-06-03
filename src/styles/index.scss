@@ -1,0 +1,279 @@
+@import "~bootstrap/scss/bootstrap";
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    background-color: #fff;
+}
+
+a{
+    color: inherit;
+}
+
+button{
+    cursor: pointer;
+    outline:none;
+    font-weight: 300;
+    background-color: #1dce94;
+    border: none;
+    border-radius: 500px;
+    color: white;
+    padding:0.5rem 1rem;
+    transition: all 0.3s;
+
+    &:hover{
+        color: #1dce94;
+        background-color: white;
+    }
+
+    &:active{
+        background-color: #cbcbcb;
+    }
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+.topnav {
+    color: #d9b81e;
+    width: 100vw;
+    height: 80px;
+    background-color: #000;
+    border-bottom: white solid 1px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    * {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+.footer {
+    color: white;
+    background-color: black;
+    width: 100vw;
+    min-height: 80px;
+    background-color: #000;
+    border-bottom: white solid 1px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    * {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
+    background: url('../assets/footerbg.png') no-repeat center center scroll;
+    @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-height : 896px) {
+        flex-direction: column;
+        // height: 200px;
+        padding: 0;
+        background: black;
+    }
+
+}
+.hero{
+    max-width: 600px;
+    width: 75vw;
+}
+.top-section {
+    height: 720px;
+    width: 100vw;
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-color: #fff;
+    background-image: url('../assets/field-sm.png');
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-height : 896px) {
+        background-attachment: scroll;
+        height: 420px;
+    }
+
+    img {
+        padding-top: 4rem;
+    }
+}
+
+.quotes-section {
+    padding-top:6rem;
+    min-height: 700px;
+    width: 100vw;
+    height: 100%;
+    background: url('../assets/bgthird.png') no-repeat center center scroll;
+    @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-height : 896px) {
+        height: 100%;
+    }
+
+    img {
+        padding-top: 4rem;
+    }
+    .sectiontwo {
+        // padding-top: 15rem;
+
+    }
+    h1 {
+        color:#636363;
+        font-weight: 300;
+    }
+    h2 {
+        color:white;
+        font-weight: 300;
+    }
+}
+
+.magazine{
+    padding-top: 5rem;
+    h1 {
+        font-weight: 300;
+    }
+    p{
+        padding-top: 1rem;
+        font-weight: 400;
+    }
+}
+
+.fillfillment {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    img{
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        }
+    @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-height : 896px) {
+        background-attachment: scroll;
+        height: 420px;
+    }
+}
+.ferriswheel {
+    width: 100vw;
+    height: 500px;
+
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-color: #fff;
+    background-image: url('../assets/ferriswheel-sm.png');
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-height : 896px) {
+        background-attachment: scroll;
+        height: 300px;
+}
+
+
+}
+
+.hello-cali {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    h1 {
+        color: #f89b1c;
+    }
+    p {
+        color: #b64e33;
+    }
+}
+
+.signup {
+    min-width: 375px;
+    border: black solid 2px;
+    display: flex;
+    flex-direction: row;
+
+    @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-height : 896px) {
+        flex-direction: column;
+        min-width: 300px;    
+    }
+        justify-content: center;
+    align-items: center;
+    .signupform{
+        input{
+            background: lightgrey;
+            border: gray solid 1px;
+        }
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        * {
+            padding: 0.5rem;
+        }
+    }
+
+}
+
+    /* iphone 6, 6s, 7, 8 */
+    @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) { }
+    /* iphone 6+, 6s+, 7+, 8+ */
+    @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) { }
+    /* iphone X */
+    @media only screen and (min-device-width: 375px) and (max-device-height: 828px) and (-webkit-device-pixel-ratio: 3) { }
+
+* { box-sizing: border-box; }
+.video-background {
+    background: #000;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+#vidtop-content {
+    top: 0;
+    color: #fff;
+}
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+    .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+    .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+    .vid-info { width: 50%; padding: .5rem; }
+    .vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+    .vid-info .acronym { display: none; }
+}
