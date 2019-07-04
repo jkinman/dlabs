@@ -7,8 +7,8 @@ html, body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-weight: lighter;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 a{
@@ -62,15 +62,15 @@ button{
 .topnav {
     color: #575757;
     width: 100vw;
-    min-height: 60px;
-    background-color: #86b959;
+    min-height: 160px;
+    background-color: #FFF;
     text-align: center;
     font-weight: 300;
     font-size: 22px;
     letter-spacing: 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     * {
         padding-left: 0.5rem;
@@ -83,56 +83,81 @@ button{
     //     flex-direction: column;
     // }
 }
-#age-verify {
-    // display: none;
-    padding-top: 5rem;
-    background-color: rgba(0,0,0,0.8);
-    position: fixed;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    .content{
-        min-width:300px;
-        .buttons{
-            position: relative;
-            top: -40px;
-            color: #fff;
-            font-size: 20px;
-            font-weight: 500;
-            :hover {
-                color: red;
-            }
-            > *{
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-        }
+
+.textblock {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px;
+    max-width: 410px;
+    color: white;
+    background-color: rgba(150,150,150,0.75);
+    &.girlpara{
+        background-color: rgba(50,50,50,0.75);
+    }
+    &.guypara{
+        background-color: rgba(130,130,116,0.85);
     }
 }
 
+.bio {
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    min-width: 400px;
+    // width: 55vw;
+    height: 500px;
+    > * {
+        padding: 1rem;
+    }
+    img{
+        margin-top: -54px;
+        width: 250px;
+    }
+    &.textleft{
+        img{
+            padding-left:0;
+        }
+        position: absolute;
+        left:0;
+    }
+    &.textright{
+        img{
+            padding-right:0;
+        }
+        position: absolute;
+        right:0;
+        padding-top: 520px;
+    }
+
+    // @media only screen 
+    // and (max-device-width : 1000px) {
+    //     flex-direction: column;
+    // }
+
+}
+
 .footer {
-    color: white;
-    background-color: black;
+    color: black;
     width: 100vw;
     min-height: 80px;
-    background-color: #000;
-    border-bottom: white solid 1px;
+    background-color: #FFF;
+    // border-bottom: white solid 1px;
     text-align: center;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 15px;
     letter-spacing: 0.5px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    margin-bottom: 10rem;
     * {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
     
-    background: url('../assets/footerbg.png') no-repeat center center scroll;
+    // background: url('../assets/footerbg.png') no-repeat center center scroll;
     @media only screen 
     and (min-device-width : 375px) 
     and (max-device-height : 896px) {
@@ -143,137 +168,16 @@ button{
     }
 
 }
-.hero{
-    max-width: 600px;
-    width: 75vw;
-}
-
-.mjchews{
-    width: 100%;
-}
-.section {
-    padding:2rem;
-    @media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-height : 896px) {
-        padding:0;
-    }
-    min-height: 720px;
-    width: 100vw;
-    background-attachment: fixed;
-    background-clip: border-box;
-    background-color: #fff;
-    background-image: url('../assets/hero-1.png');
-    background-position-x: 50%;
-    background-position-y: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    @media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-height : 896px) {
-        background-attachment: scroll;
-        min-height: 420px;
-    }
-
-    img {
-        padding-top: 4rem;
-    }
-}
 
 .section-1 {
-    background-image: url('../assets/hero-1.png');
-}
-.section-2 {
-    background-image: url('../assets/hero-2.png');
-    background-attachment: scroll;
-}
-.section-3 {
-    background-image: url('../assets/hero-3.png');
-    @media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-height : 896px) {
-        background-position-x: 25%;
-    }
-}
-.section-4 {
-    background-image: url('../assets/hero-4.png');
-}
-
-.dlabs-logo {
-    width: 75vw;
-    max-width: 400px;
-}
-.separator {
-    padding: 0.5rem;
-    padding-top: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    h1 {
-        font-weight: 300;
-        font-size: 56px;
-        letter-spacing: 0px;
-        @media only screen 
-        and (min-device-width : 375px) 
-        and (max-device-height : 896px) {
-            font-weight: 400;
-            font-size: 45px;
-            letter-spacing: -1px;
-        }
-        }
-    h2 {
-        font-weight: 400;
-        font-size: 40px;
-        letter-spacing: 0px;
-        padding-top: 4rem;
-    }
-    p {
-        font-weight: 300;
-        font-size: 20px;
-        letter-spacing: 0;
-    }
-}
-
-.hello-cali {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    h1 {
-        color: #f89b1c;
-    }
-    p {
-        color: #b64e33;
-    }
-}
-
-.signup {
-    min-width: 375px;
-    border: black solid 2px;
+    background: url('../assets/bg.png') no-repeat center center fixed;
+    // background-image: url('../assets/bg.png');
     display: flex;
-    flex-direction: row;
-
-    @media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-height : 896px) {
-        flex-direction: column;
-        min-width: 300px;    
-    }
-        justify-content: center;
-    align-items: center;
-    .signupform{
-        input{
-            background: lightgrey;
-            border: gray solid 1px;
-        }
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        * {
-            padding: 0.5rem;
-        }
-    }
-
+    min-height: 1000px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
     /* iphone 6, 6s, 7, 8 */
